@@ -1,6 +1,6 @@
 package com.shikhov.music_analyzer.commands;
 
-public class PlaylistsCommand implements Command {
+public class PlaylistsCommand extends HttpCommand {
     @Override
     public void run(){
         System.out.println("---MOOD PLAYLISTS---");

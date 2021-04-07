@@ -2,6 +2,7 @@ package com.shikhov.music_analyzer;
 
 import com.shikhov.music_analyzer.commands.*;
 
+import java.io.IOException;
 import java.util.Scanner;
 
 public class Main {
@@ -15,7 +16,10 @@ public class Main {
             switch (currentCommand) {
                 case "new" -> commandLine.setCommand(new NewCommand());
                 case "featured" -> commandLine.setCommand(new FeaturedCommand());
-                case "auth" -> commandLine.setCommand(new AuthCommand());
+                case "auth" -> {
+                    System.out.println("auth");
+                    commandLine.setCommand(new AuthCommand());
+                }
                 case "categories" -> commandLine.setCommand(new CategoriesCommand());
                 case "playlists Mood" -> commandLine.setCommand(new PlaylistsCommand());
                 case "exit" -> commandLine.setCommand(new ExitCommand());
@@ -24,5 +28,4 @@ public class Main {
             commandLine.execute();
         } while (!currentCommand.equals("exit"));
     }
-
 }

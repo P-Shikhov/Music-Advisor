@@ -1,6 +1,6 @@
 package com.shikhov.music_analyzer.commands;
 
-public class FeaturedCommand implements Command {
+public class FeaturedCommand extends HttpCommand {
     @Override
     public void run(){
         System.out.println("---FEATURED---");

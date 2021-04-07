@@ -2,7 +2,7 @@ package com.shikhov.music_analyzer;
 
 import com.shikhov.music_analyzer.commands.AuthCommand;
 import com.shikhov.music_analyzer.commands.Command;
-import com.shikhov.music_analyzer.commands.ExitCommand;
+import com.shikhov.music_analyzer.commands.HttpCommand;
 import com.shikhov.music_analyzer.commands.UnauthorizedCommand;
 
 public class CommandLine {

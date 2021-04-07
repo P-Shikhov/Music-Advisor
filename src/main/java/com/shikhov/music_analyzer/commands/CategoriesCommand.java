@@ -1,6 +1,6 @@
 package com.shikhov.music_analyzer.commands;
 
-public class CategoriesCommand implements Command {
+public class CategoriesCommand extends HttpCommand {
     @Override
     public void run(){
         System.out.println("---CATEGORIES---");

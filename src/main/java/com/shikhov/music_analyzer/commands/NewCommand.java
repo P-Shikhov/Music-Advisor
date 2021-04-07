@@ -1,8 +1,6 @@
 package com.shikhov.music_analyzer.commands;
 
-import com.shikhov.music_analyzer.commands.Command;
-
-public class NewCommand implements Command {
+public class NewCommand extends HttpCommand {
     @Override
     public void run(){
         System.out.println("---NEW RELEASES---");
