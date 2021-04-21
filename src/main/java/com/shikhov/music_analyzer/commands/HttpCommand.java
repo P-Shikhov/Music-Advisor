@@ -4,6 +4,8 @@ import java.net.http.HttpClient;
 
 public abstract class HttpCommand implements Command {
     static HttpClient httpClient;
+    static String accessToken;
+    static String refreshToken;
 
     static {
         httpClient = HttpClient.newHttpClient();
