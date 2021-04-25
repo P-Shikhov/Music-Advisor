@@ -1,5 +1,6 @@
 .idea
 td.md
+src/main/java/com/shikhov/music_analyzer/Globals.java
 
 .mtj.tmp/
 *.class

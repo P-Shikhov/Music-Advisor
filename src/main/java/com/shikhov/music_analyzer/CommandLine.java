@@ -1,9 +1,6 @@
 package com.shikhov.music_analyzer;
 
-import com.shikhov.music_analyzer.commands.AuthCommand;
-import com.shikhov.music_analyzer.commands.Command;
-import com.shikhov.music_analyzer.commands.HttpCommand;
-import com.shikhov.music_analyzer.commands.UnauthorizedCommand;
+import com.shikhov.music_analyzer.commands.*;
 
 public class CommandLine {
 
@@ -19,7 +16,7 @@ public class CommandLine {
             isAuthenticated = true;
         }
 
-        if (isAuthenticated) {
+        if (isAuthenticated || command instanceof ExitCommand) {
             this.command = command;
         } else {
             this.command = new UnauthorizedCommand();
